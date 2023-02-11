@@ -1,0 +1,20 @@
+{
+    "manifest_version": 3,
+
+    "name":"MJ's Youtube ad skip",
+    "description":"MJ's Youtube ad skip",
+    "version": "1.0",
+    "icons":{"128":"icon.png"},
+
+    "content_scripts":[
+        {
+            "js":["script.js"],
+            "run_at":"document_idle",
+            "matches":["<all_urls>"]
+        }
+    ],
+    "permissions":[
+        "tabs",
+        "activeTab"
+    ]
+}
